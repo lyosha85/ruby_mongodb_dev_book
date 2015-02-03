@@ -4,6 +4,6 @@ include Mongoid::Document
   field :type, type: String #lease or purchase
 
   belongs_to :book
-  embeds_on :lease
-  embeds_on :purchase
+  embeds_one :lease
+  embeds_one :purchase
 end
